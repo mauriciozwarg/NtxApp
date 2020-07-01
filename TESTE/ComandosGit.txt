@@ -1,0 +1,76 @@
+Git Local - 
+
+Instalação =============================================
+https://git-scm.com/
+Baixar a versão correspondente ao seu S.O.
+
+Configurações ==========================================
+Após a instalação abrir o Git-Bash
+
+No prompt de comando digitar:
+
+git version > ENTER
+git config --global user.name "nome do usuário" > ENTER
+git config --global user.email "email do usuário" > ENTER
+Digite clear > ENTER para limpar a tela
+git config user.name > ENTER
+git config user.email > ENTER
+git.config core.editor > ENTER
+exit > ENTER Fecha o terminal e encerra o Git
+
+========================================================================
+RESUMO DE COMANDOS BÁSICOS E INICIAIS DO GIT
+
+SETUP ==================================================================
+
+Setar usuário
+	git config --global user.name "seu nome"
+Setar email
+	git config --global user.email "seu email"
+Setar editor
+	git config --global core.editor vim (vim é nome do programa ... aqui poderia ser vscode (Visual Studio Code) por exemplo ou qualquer outro editor, inclusive o notepad.
+Setar ferramenta de merge
+	git config --global merge.tool vimdiff (o mesmo exemplo do editor - linha acima)
+Setar arquivos a serem ignorados
+	git config --global core.excludesfile ~/.gitignore
+Listar configurações
+	git config --list
+	
+	
+NAVEGAÇÃO ENTRE AS PASTAS NO GIT BASH (TERMINAL) =======================
+
+cd /c/pasta > ENTER - vai para a pasta desejada -- "c" = Unidade
+cd pasta > ENTER - entra em uma pasta
+cd .. > ENTER - Volta uma pasta acima - atentar para espaço entre cd e .. (caso não exista pasta acima, volta para a raiz da unidade)
+ls > ENTER - Mostra conteúdo da pasta
+ll > ENTER - Mostra conteúdo da pasta com atributos
+
+
+
+
+
+OPERAÇÕES COM O GIT =====================================================
+
+git init  - inicializa o git (cria um repositório local na pasta desejada ou se já existir, inicia o repositório já existente)
+git add . - adiciona arquivos em stage - Pré-repositório
+git commit -m "Texto descritivo do commit" - cria ponto na linha do tempo do projeto
+git log - visualiza os pontos na linha do tempo do projeto
+git status - informa o estado das alterações do projeto
+git show - apresenta um determinado ponto no projeto
+git branch nome da branch - cria uma ramificação
+git checkout  (ou checkout -b + nome da branch) nome da branch - vai para a ramificação
+git merge branch "nome da branch" (sem as aspas) - inclui a branch na master
+git branch -d nome da branch - apaga a branch
+
+
+REPOSITÓRIO REMOTO - GITHUB ============================================
+
+git remote add origin https://github.com/seu_usuario_no_github/seu_repositorio_no_github
+git push -u origin master
+git push - envia para repositorio remoto
+git config credential.helper store - guarda as credenciais para subir no github
+git clone - baixa um projeto já iniciado
+
+
+
+
